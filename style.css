@@ -1,0 +1,59 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    height: 700px;
+    max-width: 90%;    
+    overflow: hidden;
+   
+}
+
+.image {
+    height: 100%;
+    width: 35%;
+}
+
+.main {
+    height: 100%;
+    width: 65%;
+    background-color: rgb(250, 250, 250);
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem;
+    height: 33%;   
+}
+
+.input {
+    background-color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    padding: 10px;
+}
+
+.submit {
+
+
+}
+
