@@ -3,23 +3,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:  #333A44;
 }
 
 body {
     height: 100vh;
-    background-color: black;
+    background-color: #FEECC3;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .wrapper {
     display: flex;
     align-items: center;
     height: 700px;
-    max-width: 90%;    
+    max-width: 80%;    
     overflow: hidden;
-   
+    border-radius: 0.4rem;
+    box-shadow: 2px 6px 8px #B59F84;
 }
 
 .image {
@@ -30,30 +33,99 @@ body {
 .main {
     height: 100%;
     width: 65%;
-    background-color: rgb(250, 250, 250);
+    background-color: #FFFFF5;
 }
 
 .description {
     display: flex;
     flex-direction: column;
     padding: 3rem 2rem;
-    height: 33%;   
+    height: 33%;      
 }
 
-.input {
+h2 {
+    margin-bottom: 0.9rem;
+    line-height: 1.9rem;
+    font-size: 1.3rem;
+}
+
+.description p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.inputs {
     background-color: #FFFFFF;
-    padding: 20px;
+    padding: 2rem 1rem 2rem 1rem;    
     display: flex;
     flex-direction: column;
+    box-shadow: 1px 2px 8px #B59F84;
+}
+
+.inputs p {
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .form-row {
     display: flex;
-    padding: 10px;
+    padding: 0.5rem;
+    margin-bottom: 0.9rem;
+}
+
+.form-cell {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    width: 38%;   
+}
+
+.form-cell label {
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    padding-bottom: 0.1rem;
+}
+
+.form-cell input {
+    padding: 0.25rem;
+    border: 1px solid #E5E7EB;   
+}
+
+.form-cell > input {
+    
+
 }
 
 .submit {
-
-
+    padding-top: 3rem;
+    padding-left: 1.5rem;    
 }
+
+.submit-button button {
+    padding: .6rem;
+    border-radius: 0.3rem;
+    width: 35%;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #FFFFF5;
+    border: none;    
+    background-color: #E35A01; 
+    box-shadow: 1px 2px 5px #A47551;  
+}
+
+.submit p {
+    margin-top: 1.1rem;
+    padding-left: 0.2rem;
+    font-size: 0.8rem;
+}
+
+.submit a {
+    text-decoration: none;
+    color: #E35A01;
+    font-weight: 600;
+}
+
+
 
