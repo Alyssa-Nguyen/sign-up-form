@@ -18,7 +18,7 @@ body {
 .wrapper {
     display: flex;
     align-items: center;
-    height: 700px;
+    height: 750px;
     max-width: 80%;    
     overflow: hidden;
     border-radius: 0.4rem;
@@ -40,7 +40,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 3rem 2rem;
-    height: 33%;      
+    height: 28%;      
 }
 
 h2 {
@@ -56,7 +56,7 @@ h2 {
 
 .inputs {
     background-color: #FFFFFF;
-    padding: 2rem 1rem 2rem 1rem;    
+    padding: 2rem 1rem 1.5rem 1rem;    
     display: flex;
     flex-direction: column;
     box-shadow: 1px 2px 8px #B59F84;
@@ -90,7 +90,7 @@ h2 {
 
 .form-cell input {
     padding: 0.25rem;
-    border: 1px solid #E5E7EB;   
+    border: 1.5px solid #D3D3D3;   
 }
 
 .form-cell > input {
@@ -98,13 +98,22 @@ h2 {
 
 }
 
+.checkbox span {
+    font-size: 0.85rem;
+}
+
+input[type="checkbox"] {
+    accent-color: #E35A01;
+    transform: scale(1.2);
+}
+
 .submit {
     padding-top: 3rem;
     padding-left: 1.5rem;    
 }
 
-.submit-button button {
-    padding: .6rem;
+button {
+    padding: .7rem;
     border-radius: 0.3rem;
     width: 35%;
     font-weight: 600;
@@ -113,6 +122,11 @@ h2 {
     border: none;    
     background-color: #E35A01; 
     box-shadow: 1px 2px 5px #A47551;  
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #FFE5B4;
 }
 
 .submit p {
@@ -127,5 +141,13 @@ h2 {
     font-weight: 600;
 }
 
+input:focus {
+    outline: none;
+    border: 2px solid #ac8005;    
+}
+
+input:invalid {
+    color: red;
+}
 
 

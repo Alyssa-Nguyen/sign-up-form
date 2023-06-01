@@ -32,11 +32,11 @@
 
                         <div class="form-cell">
                             <label for="first-name">First Name</label>
-                            <input id="first-name" name="first-name" type="text" />
+                            <input id="first-name" name="first-name" type="text" required/>
                         </div>
                         <div class="form-cell">
                             <label for="last-name">Last Name</label>
-                            <input id="last-name" name="last-name" type="text" />
+                            <input id="last-name" name="last-name" type="text" required/>
                         </div>
                     </div>
                     
@@ -44,11 +44,11 @@
 
                         <div class="form-cell">
                             <label for="email">Email</label>
-                            <input id="email" name="email" type="email">
+                            <input id="email" name="email" type="email" required />
                         </div>
                         <div class="form-cell">
                             <label for="phone">Phone Number</label>
-                            <input id="phone" name="phone" type="number">
+                            <input id="phone" name="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx">
                         </div>
                     </div>
 
@@ -61,6 +61,13 @@
                             <label for="pwd-con">Confirm Password</label>
                             <input id="pwd-con" name="pwd-con" type="password" required/>
                         </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label class="checkbox" for="sign-in">
+                            <input id="sign-in" name="sign-in" type="checkbox" value="sign-in" checked/>
+                            <span>Keep me signed in</span>
+                        </label>
                     </div>
                 </div>
 
