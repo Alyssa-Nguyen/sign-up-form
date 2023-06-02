@@ -1,4 +1,21 @@
 
+
+@font-face {
+    font-family: 'Norse Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Norse Regular'), url('Norse.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Norse Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Norse Bold'), url('Norsebold.woff') format('woff');
+    }
+
+
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +44,32 @@ body {
 
 .image {
     height: 100%;
-    width: 35%;
+    width: 35%; 
+    position: relative;   
+    overflow: hidden;
+}
+
+.logo {
+    position: absolute;
+    top: 230px;
+    width: 28%;
+    height: 120px;
+    display: flex;    
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    align-items: center; 
+    justify-content: center;   
+}
+
+.logo img {
+    width: 25%;
+}
+
+.logo p {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Norse Bold';
 }
 
 .main {
@@ -143,7 +185,8 @@ button:active {
 
 input:focus {
     outline: none;
-    border: 2px solid #ac8005;    
+    border: 2px solid rgb(0, 60, 255);
+    box-shadow: 1px 2px 2px silver;     
 }
 
 input:invalid {
